@@ -27,16 +27,16 @@ a web application that allows users to upload a pdf file and return a compacted 
 ### The pdf compression rools URL
 https://github.com/ourarash/shrinkpdf
 
-##Before Starting
+## Before Starting
 For Mac, ignore this part
 For Windows, turn to app.js and change the code line from 104-111
 
-    var command = `./shrinkpdf.sh ./originalFiles/${originalFile} ./compactedFiles/${compactedFile}`;
+    var command = `${dir}/shrinkpdf.bat ./originalFiles/${originalFile} ./compactedFiles/${compactedFile}`;
     if (quality == 300 || quality == 144 || quality == 60) {
-        command = `./shrinkpdf.sh ./originalFiles/${originalFile} ./compactedFiles/${compactedFile} ${quality}`;
+        command = `${dir}/shrinkpdf.bat ./originalFiles/${originalFile} ./compactedFiles/${compactedFile} ${quality}`;
     }
     else {
-        command = `./shrinkpdf.sh ./originalFiles/${originalFile} ./compactedFiles/${compactedFile} ${resolution}`;
+        command = `${dir}/shrinkpdf.bat ./originalFiles/${originalFile} ./compactedFiles/${compactedFile} ${resolution}`;
 
     }
 
