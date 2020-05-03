@@ -29,6 +29,7 @@ https://github.com/ourarash/shrinkpdf
 
 ## Before Starting
 For Mac, ignore this part
+
 For Windows, turn to app.js and change the code line from 104-111
 
     var command = `${dir}/shrinkpdf.bat ./originalFiles/${originalFile} ./compactedFiles/${compactedFile}`;
